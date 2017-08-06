@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Smakelijk</string>
+    <string name="title_activity_base_app">BaseApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Default Text</string>
+    <string name="no_food_item">No food item to display</string>
+    <string name="food_details_name">Name</string>
+    <string name="food_details_currency">Currency</string>
+    <string name="food_details_price">Price</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
