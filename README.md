@@ -21,3 +21,6 @@ This app also uses RxJava for making asynchronous event calls in aclean way. RxJ
 
 # Retrofit
 The app uses Retrofit as REST client. Retrofit is a REST Client for Android and Java. It makes it relatively easy to retrieve and upload JSON. Retrofit uses the OkHttp library for HTTP requests.
+
+# Glide
+As this app deals with lot of images, so the app uses Glide for image management
