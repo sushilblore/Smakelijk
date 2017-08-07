@@ -24,3 +24,6 @@ The app uses Retrofit as REST client. Retrofit is a REST Client for Android and 
 
 # Glide
 As this app deals with lot of images, so the app uses Glide for image management
+
+# RecyclerView and CardView
+This app uses RecyclerView and CardView(Gridlayout) to show the items.
