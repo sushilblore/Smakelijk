@@ -1,6 +1,6 @@
 # Food & Drinks Ordering System - Smakelijk
 
-This is demo app for restraunt food and drinks ordering system. All the information about food and drinks are fetched from the system.
+This is demo app for restaurant food and drinks ordering system. All the information about food and drinks are fetched from the system.
 The app has 3 screens:
 - HomeScreen : It allows the user to choose between food or drinks menu
 - Food/Drink List Screen : Once clicked on any of the menu, it launches the options for corresponding menu (food/drinks)
