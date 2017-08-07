@@ -71,6 +71,8 @@ public class HomeScreenFragment extends Fragment implements HomeScreenContract.V
         Log.d("Sushil", "HomeScreenFragment onCreateView");
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home_screen, container, false);
+
+        mLoadingIndicator = (ProgressBar) view.findViewById(R.id.loading_foodItems);
         // Calling the RecyclerView
         mRecyclerView = (EmptyRecyclerView) view.findViewById(R.id.recycler_view);
         mRecyclerView.setHasFixedSize(true);
@@ -86,7 +88,6 @@ public class HomeScreenFragment extends Fragment implements HomeScreenContract.V
         return view;
     }
 
-
     @Override
     public void setPresenter(@NonNull HomeScreenContract.Presenter presenter) {
         checkNotNull(presenter);
@@ -101,12 +102,12 @@ public class HomeScreenFragment extends Fragment implements HomeScreenContract.V
 
     @Override
     public void showWait() {
-
+        mLoadingIndicator.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void removeWait() {
-
+        mLoadingIndicator.setVisibility(View.GONE);
     }
 
     @Override

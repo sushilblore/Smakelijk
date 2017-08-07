@@ -63,7 +63,6 @@ public class MainActivity extends BaseApp implements NavigationView.OnNavigation
         FoodListFragment foodListFragment = null;
         switch(item.getItemId()) {
             case R.id.nav_food:
-
                 if (foodListFragment == null) {
                     foodListFragment = foodListFragment.newInstance(0);
 

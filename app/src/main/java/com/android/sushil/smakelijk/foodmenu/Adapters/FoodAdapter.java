@@ -87,7 +87,7 @@ public class FoodAdapter extends EmptyRecyclerView.Adapter<FoodAdapter.ViewHolde
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    FoodDetailsFragment foodDetailsFragment = null;//(FoodDetailsFragment) ((MainActivity)view.getContext()).getSupportFragmentManager().findFragmentByTag("FoodDetails");
+                    FoodDetailsFragment foodDetailsFragment = (FoodDetailsFragment) ((MainActivity)view.getContext()).getSupportFragmentManager().findFragmentByTag("FoodDetails");
                     if (foodDetailsFragment == null) {
                         foodDetailsFragment = foodDetailsFragment.newInstance(foodListData.getUrl(),
                                                                               foodListData.getName(),

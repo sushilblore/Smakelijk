@@ -60,7 +60,7 @@ public class GridAdapter extends EmptyRecyclerView.Adapter<GridAdapter.ViewHolde
                 if (isLongClick) {
 
                 } else {
-                    FoodListFragment foodListFragment = null;//(FoodListFragment) ((MainActivity) view.getContext()).getSupportFragmentManager().findFragmentByTag("FoodList");
+                    FoodListFragment foodListFragment = (FoodListFragment) ((MainActivity) view.getContext()).getSupportFragmentManager().findFragmentByTag("FoodList");
                     if (foodListFragment == null) {
                         foodListFragment = foodListFragment.newInstance(position);
 
